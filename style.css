@@ -22,7 +22,7 @@
 }
 .todo-app{
     width:100%;
-    max-width:940px;
+    max-width:840px;
     background:#fff;
     margin:100 auto 20px;
     padding:40px 30px 10px;
@@ -78,7 +78,7 @@ button{
 
 ul li{
     list-style: none;
-    font-size: 17px;
+    font-size: 27px;
     padding:12px 8px 12px 50px;
     user-select:none;
     cursor:pointer;
