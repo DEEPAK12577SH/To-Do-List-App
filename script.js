@@ -3,7 +3,7 @@ const listContainer = document.getElementById("listContainer");
 
 function addTask(){
     if(inputBox.value ===''){
-         swal("Vaccent Field!", "Please Write Your Task Name.", "error");
+        alert(`add task name pease!`);
     }
     else{
         let li = document.createElement("li");
@@ -19,7 +19,7 @@ function addTask(){
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked");
-        swal("Deleted !", Deepak Sharma You Task Is Successfully Deleted.", "success");
+       
         SaveData()
     }
     else if(e.target.tagName ==="SPAN"){
