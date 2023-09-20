@@ -25,6 +25,7 @@ listContainer.addEventListener("click",function(e){
     }
     else if(e.target.tagName ==="SPAN"){
         e.target.parentElement.remove();
+        
         SaveData()
     }
 },false)
@@ -35,7 +36,7 @@ function SaveData(){
 }
 function showData(){
     listContainer.innerHTML = localStorage.getItem("data");
-
+ swal("Deleted !", "You Task Is Successfully Deleted.", "success");
 }
 
 showData();
