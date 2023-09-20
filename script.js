@@ -3,8 +3,7 @@ const listContainer = document.getElementById("listContainer");
 
 function addTask(){
     if(inputBox.value ===''){
-        alert(`add task name pease!`);
-         swal("Vaccent Field!", "Please Write Your Task Name.", "error");
+         swal("Empty Task Area !", " Deepak Sharma ! Please Write Your Task Name.", "error");
     }
     else{
         let li = document.createElement("li");
@@ -25,7 +24,7 @@ listContainer.addEventListener("click",function(e){
     }
     else if(e.target.tagName ==="SPAN"){
         e.target.parentElement.remove();
-        
+         swal("Deleted !", " DEEPAK You Task Is Successfully Deleted.", "success");
         SaveData()
     }
 },false)
@@ -36,7 +35,7 @@ function SaveData(){
 }
 function showData(){
     listContainer.innerHTML = localStorage.getItem("data");
- swal("Deleted !", "You Task Is Successfully Deleted.", "success");
+
 }
 
 showData();
