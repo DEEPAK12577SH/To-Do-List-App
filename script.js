@@ -4,6 +4,7 @@ const listContainer = document.getElementById("listContainer");
 function addTask(){
     if(inputBox.value ===''){
         alert(`add task name pease!`);
+         swal("Vaccent Field!", "Please Write Your Task Name.", "error");
     }
     else{
         let li = document.createElement("li");
