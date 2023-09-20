@@ -32,9 +32,14 @@
     margin-left: 200px;
     color: #ff2063;
 }
+.popup h3{
+    font-weight: bold;
+    
+}
 .popup p{
     font-size: 20px;
     color: rgb(0, 197, 16);
+    margin-top: 20px;
 }
 .popup{
     width:700px;
