@@ -3,6 +3,7 @@
     <head>
         <title> To Do list avd1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     </head>
 <body>
    
@@ -11,17 +12,35 @@
                 <h2>To-Do-List <img src="to-do-list-icon-15.jpg"></h2>
                 <div class="row">
                     <input type="text" placeholder="Whats To do Today?" id="input-box"><button onclick="addTask()">Add</button>
+                    
                 </div>
                 <ul id="listContainer">
                    <!-- <li class="checked">Task 1 </li>
                     <li>Task 1 </li>
                     <li>Task 1 </li>-->
+                   
                 </ul>
-            </div>
-           
+            
+                    <div class="popup" Id="popup">
+                        <img src="green check icon.png">
+                        <h2>Congratulation !</h2>
+                        <p>You Have Completed Your Whole Task.</p>
+                        <button type="button" class="ok" onclick="closePopup()">OK</button>
+                    </div>
+                    <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                </div>
+
         </div>
+        
+        
+        
+        <script src="script.js"></script>
+        <script src="script2.js"></script>
+
+    </body>
        
 <script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
    
 </body>
 </html>
